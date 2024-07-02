@@ -46,12 +46,12 @@ function App() {
 
   return (
     <>
-    <section className='flex justify-center bg-stone-600 h-[100vh] items-center'>
-      <div className='flex flex-col items-center gap-7 px-10 py-10  bg-gray-700 max-w-[350px] rounded'>
+    <section className='flex justify-center bg-stone-600 items-center overflow-hidden'>
+      <div className='flex flex-col items-center gap-7 px-10 py-10 overflow-hidden bg-gray-700 max-w-[350px] rounded'>
         <h1 className='text-white font-bold sm:text-sm'>Calculate your Body Mass Index</h1>
         <h1 className=' text-yellow-300 px-8 rounded text-xs'>{showelse?`Height value is missing or invalid`:''}</h1>
         <form className='flex flex-col gap-10'>
-          <div className='flex flex-col items-center gap-2'>
+          <div className='flex flex-col items-center justify-center  gap-2'>
             <label className='self-start font-bold text-white'>WEIGHT(KG):</label>
             <input type="number" placeholder='Enter your weight(kg)'value={weight} onChange={(e)=>{setWeight(e.target.value)}} />
           </div>
