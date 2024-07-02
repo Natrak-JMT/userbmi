@@ -47,7 +47,7 @@ function App() {
   return (
     <>
     
-      <div className='flex flex-col items-center gap-7 justify-center h-[100vh] px-20 bg-gray-700  rounded'>
+      <div className='flex flex-col items-center gap-7 justify-center overflow-hidden h-[100vh] px-20 bg-gray-700  rounded'>
         <h1 className='text-white  sm:text-xl text-xl w-[80vw] text-center font-bold'>Calculate your Body Mass Index</h1>
         <h1 className=' text-red-700 px-8 rounded text-[17px] font-bold text-center w-[90vw] '>{showelse?`Height value is missing or invalid`:''}</h1>
         <form className='flex flex-col gap-10'>
@@ -66,8 +66,8 @@ function App() {
          </form>
          
          
-      <h1 className='bg-orange-500 px-10 rounded text-white'>{show?`Your Body Mass Index is: ${showresult}`:''}</h1>
-      <h1 className='bg-orange-500 px-10 rounded text-white'>{show?`This Is Considered "${category}"`:''}</h1>
+      <h1 className='bg-orange-500 px-10 rounded text-center text-white'>{show?`Your Body Mass Index is: ${showresult}`:''}</h1>
+      <h1 className='bg-orange-500 px-10 rounded text-center text-white'>{show?`This Is Considered "${category}"`:''}</h1>
 
         
       </div>
